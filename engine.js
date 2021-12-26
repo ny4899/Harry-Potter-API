@@ -61,7 +61,7 @@ const filteringDataAndPrinting = function (data) {
     : renderError("No Character with this name");
 };
 const apiDetails = function () {
-  fetch(`http://hp-api.herokuapp.com/api/characters`)
+  fetch(`https://hp-api.herokuapp.com/api/characters`)
     .then((res) => {
       if (res.ok === false) {
         throw new Error(`Unable to connect with Internet`);
